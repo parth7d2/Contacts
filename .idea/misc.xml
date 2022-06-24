@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/edit_back.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_contact.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_contact.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_recent_call.xml" value="0.33697916666666666" />
-        <entry key="app/src/main/res/layout/item_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_layout.xml" value="0.335" />
       </map>
     </option>
   </component>

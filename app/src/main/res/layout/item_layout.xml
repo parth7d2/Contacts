@@ -50,7 +50,7 @@
                 android:layout_marginTop="20dp"
                 app:layout_constraintStart_toEndOf="@+id/id_name"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:drawable/stat_sys_phone_call"/>
+                app:srcCompat="@drawable/ic_baseline_call_24"/>
 
             <ImageView
                 android:id="@+id/id_sms"
