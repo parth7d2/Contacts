@@ -1,6 +1,5 @@
 package com.example.contacts;
 
-import android.annotation.SuppressLint;
 import android.database.Cursor;
 import android.os.Bundle;
 
@@ -18,7 +17,6 @@ import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 
 public class ContactFragment extends Fragment {
@@ -27,7 +25,7 @@ public class ContactFragment extends Fragment {
 
     RecyclerView recyclerView;
     ArrayList<Model> arrayList;
-    Adapter adapter;
+    ContactRVAdapter contactRVAdapter;
 
 
     @Override
@@ -38,9 +36,9 @@ public class ContactFragment extends Fragment {
         recyclerView = view.findViewById(R.id.recyer_view_contacts);
         editText = view.findViewById(R.id.editTextTextPersonName);
         arrayList = new ArrayList<>();
-        adapter = new Adapter(getContext(), arrayList);
+        contactRVAdapter = new ContactRVAdapter(getContext(), arrayList);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(adapter);
+        recyclerView.setAdapter(contactRVAdapter);
 
         readContacts();
 
@@ -75,7 +73,7 @@ public class ContactFragment extends Fragment {
 
             arrayList.add(new Model(name, phoneNumber));
         }
-        adapter.notifyDataSetChanged();
+        contactRVAdapter.notifyDataSetChanged();
         phones.close();
     }
 
@@ -88,7 +86,7 @@ public class ContactFragment extends Fragment {
             }
         }
 
-        adapter.filterlist(filterlist);
+        contactRVAdapter.filterlist(filterlist);
     }
 
 }

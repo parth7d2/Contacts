@@ -23,7 +23,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
             case 0: new ContactFragment();
 
-            case 1: new recentCallFragment();
+            case 1: new null_Fragment();
         }
         return new ContactFragment();
     }
