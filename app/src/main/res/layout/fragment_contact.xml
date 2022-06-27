@@ -17,7 +17,7 @@
         android:background="@drawable/edit_back"
         android:drawableLeft="@drawable/ic_round_search_24"
         android:ems="10"
-        android:gravity="center"
+
         android:inputType="textPersonName"
         android:hint="Search here..."
         android:padding="3dp" />
