@@ -1,23 +1,15 @@
 package com.example.contacts;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
-import android.telephony.SmsManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.google.android.material.internal.TextDrawableHelper;
 
 
 import java.util.ArrayList;
@@ -99,7 +91,7 @@ public class ContactRVAdapter extends RecyclerView.Adapter<ContactRVAdapter.View
 //        });
     }
 
-    public void filterlist(List<Model> filterlist){
+    public void filterlist(List<ContactsModal> filterlist){
         modelArrayList = (ArrayList<Model>) filterlist;
         notifyDataSetChanged();
     }
