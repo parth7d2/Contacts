@@ -133,7 +133,7 @@ private void getContacts() {
             }
         }
     }
-    // on below line we are closing our cursor.
+
     cursor.close();
 
     contactRVAdapter.notifyDataSetChanged();
